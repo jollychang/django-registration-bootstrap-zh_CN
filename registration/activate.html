@@ -1,10 +1,10 @@
 {% extends "registration/registration_base.html" %}
-{% block title %}{% if account %}Activation complete{% else %}Activation problem{% endif %}{% endblock %}
+{% block title %}{% if account %}激活完成{% else %}激活有问题{% endif %}{% endblock %}
 {% block content %}
 {% if account %}
-Thanks {{ account }}, activation complete!  You may now <a href='{% url auth_login %}'>login</a> using the username and password you set at registration.
+谢谢 {{ account }}, 激活完成!  你现在可以用用户名和密码 <a href='{% url auth_login %}'>登录</a> 。
 {% else %}
-Oops &ndash; it seems that your activation key is invalid.  Please check the url again.
+Oops &ndash; 您的激活验证码无效.  请再次检查激活连接。
 {% endif %}
 {% endblock %}
 
