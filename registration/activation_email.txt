@@ -1,11 +1,9 @@
-You (or someone pretending to be you) have asked to register an account at 
-{{ site.name }}.  If this wasn't you, please ignore this email
-and your address will be removed from our records.
+你收到这封邮件是因为你刚刚在{{ site.name }}注册了一个帐号。
 
-To activate this account, please click the following link within the next 
-{{ expiration_days }} days:
+请你点击下边的链接激活您的帐号:
 
 http://{{site.domain}}/accounts/activate/{{ activation_key }}
 
-Sincerely,
-{{ site.name }} Management
+这个链接会在{{ expiration_days }}天内失效
+
+{{ site.name }} 团队致上
